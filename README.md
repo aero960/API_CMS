@@ -4,7 +4,7 @@ Repository to easy create CRUD APIs.
 > How to use ?
 
 ## 1. Configure Database classfor yourpurpose or add other database type 
-example :
+### example :
     PATH: ```src/class/database.php```
         1. implement interface _DatabaseRepository
             ```
@@ -50,7 +50,7 @@ example :
         }
 
 
-PATH: ```src/test/test.php```
+#### PATH: ```src/test/test.php```
 ## 3. Configure routes
 
         ```ControllerRoute::getInstance()->_Initialize((object)[
@@ -67,7 +67,7 @@ PATH: ```src/test/test.php```
         ```
 
 
-    U can also configure Plugin which return RouteListManagment
+###    U can also configure Plugin which return RouteListManagment
 
 
         PATH: ```src/test/plugin.php```
@@ -90,12 +90,12 @@ PATH: ```src/test/test.php```
             }
         }
         ```
-    NOTE: Validator has only one method IsValid you can create own Validators to webpage
+ ###   NOTE: Validator has only one method IsValid you can create own Validators to webpage
 
 ## 4. Last part of configure is creating new Views and Cruds 
 
-    CRUD example, only specife methods,
-    you can make it for multiple databases
+###    CRUD example, only specife methods,
+###    you can make it for multiple databases
 
     ```
     abstract class QuizCRUD extends CRUDBuilder implements _Create, _Read, _Update, _Delete
@@ -110,7 +110,7 @@ PATH: ```src/test/test.php```
     }
     ```
 
-    Implementation for MongoDB
+###    Implementation for MongoDB
 
         ```
         class QuizCRUDMongoDb extends QuizCRUD
@@ -143,6 +143,6 @@ PATH: ```src/test/test.php```
         ```
 
 
-NOTE every CRUD use schemas and product 
+#### NOTE every CRUD use schemas and product 
 
-SEE ```src/class/operations/schema.php``` to get detailed for building schemas and product concentrate ```src/class/operations/product.php```
+###### SEE ```src/class/operations/schema.php``` to get detailed for building schemas and product concentrate ```src/class/operations/product.php```
