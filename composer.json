@@ -1,0 +1,66 @@
+{
+  "name": "composer/test",
+  "description": "composer test app",
+  "keywords": [
+    "test"
+  ],
+  "type": "project",
+  "version": "0.0.3",
+  "license": "",
+  "autoload": {
+    "psr-4": {
+      "APP\\": "src/"
+    },
+    "classmap": [
+      "src/class/database.php",
+      "src/interface/interface.php",
+
+
+      "src/class/routes.php",
+      "src/controller/controller_route.php",
+      "src/class/element.php",
+      "src/class/security.php",
+      "src/class/plugins.php",
+      "src/class/view.php",
+      "src/class/information.php",
+
+      "src/class/operations/crud.php",
+      "src/class/operations/schema.php",
+      "src/class/operations/product.php",
+      "src/class/authentication.php",
+      "src/class/converter.php",
+
+
+      "src/class/server_message/serverlanguage.php",
+      "src/class/server_message/builders.php",
+      "src/class/server_message/avaiablelanguages.php"
+
+    ],
+    "files": [
+      "helper/Helper.php",
+      "src/test/test.php"
+    ]
+  },
+  "include-path": [
+    "configuration/"
+  ],
+  "scripts": {},
+  "require": {
+    "phroute/phroute": "^2.1",
+    "sabre/event": "5",
+    "ext-json": "*",
+    "firebase/php-jwt": "^5.1",
+    "ext-pdo": "*",
+    "fzaninotto/faker": "^1.9",
+    "mongodb/mongodb": "^1.6",
+    "ext-mongo": "*",
+    "ext-mongodb": "*",
+    "ext-apache": "*"
+  },
+  "provide": {
+    "ext-mongo": "*"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  }
+}
